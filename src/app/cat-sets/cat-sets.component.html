@@ -1,0 +1,13 @@
+<h1>Cat Sets</h1>
+<ul>
+  <div *ngFor="let set of catSets"
+       (click)="onSelect(set)">
+    <h2>{{set.name}}</h2>
+    <div *ngIf="selectedSet && selectedSet === set">
+      <h3>Ubers</h3>
+      <div *ngFor="let uber of set.uberRareCats; let i = index">
+        {{i}}: {{uber.name}}
+      </div>
+    </div>
+  </div>
+</ul>

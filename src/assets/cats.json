@@ -1,0 +1,1052 @@
+[
+    {
+        "id": 30,
+        "name": "Bodhisattva Cat",
+        "rarity": 1
+    },
+    {
+        "id": 31,
+        "name": "Delinquent Cat",
+        "rarity": 1
+    },
+    {
+        "id": 32,
+        "name": "Hip Hop Cat",
+        "rarity": 1
+    },
+    {
+        "id": 33,
+        "name": "Kotatsu Cat",
+        "rarity": 1
+    },
+    {
+        "id": 34,
+        "name": "Nekoluga",
+        "rarity": 2
+    },
+    {
+        "id": 35,
+        "name": "Nerd Cat",
+        "rarity": 1
+    },
+    {
+        "id": 36,
+        "name": "Swimmer Cat",
+        "rarity": 1
+    },
+    {
+        "id": 37,
+        "name": "Pogo Cat",
+        "rarity": 0
+    },
+    {
+        "id": 38,
+        "name": "Wheel Cat",
+        "rarity": 0
+    },
+    {
+        "id": 39,
+        "name": "Apple Cat",
+        "rarity": 1
+    },
+    {
+        "id": 40,
+        "name": "Bath Cat",
+        "rarity": 1
+    },
+    {
+        "id": 41,
+        "name": "Salon Cat",
+        "rarity": 0
+    },
+    {
+        "id": 42,
+        "name": "Ice Cat",
+        "rarity": 2
+    },
+    {
+        "id": 43,
+        "name": "Cat Machine",
+        "rarity": 2
+    },
+    {
+        "id": 44,
+        "name": "Lesser Demon Cat",
+        "rarity": 2
+    },
+    {
+        "id": 46,
+        "name": "Jurassic Cat",
+        "rarity": 0
+    },
+    {
+        "id": 47,
+        "name": "Viking Cat",
+        "rarity": 0
+    },
+    {
+        "id": 48,
+        "name": "Pirate Cat",
+        "rarity": 0
+    },
+    {
+        "id": 49,
+        "name": "Thief Cat",
+        "rarity": 0
+    },
+    {
+        "id": 50,
+        "name": "Bishop Cat",
+        "rarity": 0
+    },
+    {
+        "id": 51,
+        "name": "Fortune Teller Cat",
+        "rarity": 0
+    },
+    {
+        "id": 52,
+        "name": "Shaman Cat",
+        "rarity": 0
+    },
+    {
+        "id": 55,
+        "name": "Witch Cat",
+        "rarity": 0
+    },
+    {
+        "id": 56,
+        "name": "Archer Cat",
+        "rarity": 0
+    },
+    {
+        "id": 57,
+        "name": "Marauder Cat",
+        "rarity": 2
+    },
+    {
+        "id": 58,
+        "name": "Swordsman Cat",
+        "rarity": 0
+    },
+    {
+        "id": 59,
+        "name": "Baby Cat",
+        "rarity": 2
+    },
+    {
+        "id": 60,
+        "name": "Bronze Cat",
+        "rarity": 0
+    },
+    {
+        "id": 61,
+        "name": "Sushi Cat",
+        "rarity": 1
+    },
+    {
+        "id": 63,
+        "name": "Sports Day Cat",
+        "rarity": 0
+    },
+    {
+        "id": 70,
+        "name": "Salaryman Cat",
+        "rarity": 0
+    },
+    {
+        "id": 71,
+        "name": "Sanada Yukimura",
+        "rarity": 2
+    },
+    {
+        "id": 72,
+        "name": "Maeda Keiji",
+        "rarity": 2
+    },
+    {
+        "id": 73,
+        "name": "Oda Nobunaga",
+        "rarity": 2
+    },
+    {
+        "id": 74,
+        "name": "Reindeer Fish Cat",
+        "rarity": 0
+    },
+    {
+        "id": 75,
+        "name": "Windy",
+        "rarity": 2
+    },
+    {
+        "id": 76,
+        "name": "Thundia",
+        "rarity": 2
+    },
+    {
+        "id": 78,
+        "name": "Space Cat",
+        "rarity": 0
+    },
+    {
+        "id": 79,
+        "name": "Adult Cat",
+        "rarity": 0
+    },
+    {
+        "id": 80,
+        "name": "Evil Cat",
+        "rarity": 0
+    },
+    {
+        "id": 81,
+        "name": "Doll Cats",
+        "rarity": 0
+    },
+    {
+        "id": 83,
+        "name": "Sodom",
+        "rarity": 2
+    },
+    {
+        "id": 84,
+        "name": "Megidora",
+        "rarity": 2
+    },
+    {
+        "id": 85,
+        "name": "Vars",
+        "rarity": 2
+    },
+    {
+        "id": 86,
+        "name": "Kamukura",
+        "rarity": 2
+    },
+    {
+        "id": 87,
+        "name": "Raiden",
+        "rarity": 2
+    },
+    {
+        "id": 88,
+        "name": "Rope Jump Cat",
+        "rarity": 0
+    },
+    {
+        "id": 91,
+        "name": "Crazed Cat",
+        "rarity": 1
+    },
+    {
+        "id": 92,
+        "name": "Crazed Tank Cat",
+        "rarity": 1
+    },
+    {
+        "id": 93,
+        "name": "Crazed Axe Cat",
+        "rarity": 1
+    },
+    {
+        "id": 94,
+        "name": "Crazed Gross Cat",
+        "rarity": 1
+    },
+    {
+        "id": 95,
+        "name": "Crazed Cow Cat",
+        "rarity": 1
+    },
+    {
+        "id": 96,
+        "name": "Crazed Bird Cat",
+        "rarity": 1
+    },
+    {
+        "id": 97,
+        "name": "Crazed Fish Cat",
+        "rarity": 1
+    },
+    {
+        "id": 98,
+        "name": "Crazed Lizard Cat",
+        "rarity": 1
+    },
+    {
+        "id": 99,
+        "name": "Crazed Titan Cat",
+        "rarity": 1
+    },
+    {
+        "id": 100,
+        "name": "Maiden Cat",
+        "rarity": 0
+    },
+    {
+        "id": 104,
+        "name": "Koi Cat",
+        "rarity": 0
+    },
+    {
+        "id": 105,
+        "name": "Kuu",
+        "rarity": 2
+    },
+    {
+        "id": 106,
+        "name": "Kai",
+        "rarity": 2
+    },
+    {
+        "id": 107,
+        "name": "Coppermine",
+        "rarity": 2
+    },
+    {
+        "id": 109,
+        "name": "Madam Bride",
+        "rarity": 0
+    },
+    {
+        "id": 122,
+        "name": "Vacation Queen",
+        "rarity": 0
+    },
+    {
+        "id": 124,
+        "name": "Date Masamune",
+        "rarity": 2
+    },
+    {
+        "id": 125,
+        "name": "Takeda Shingen",
+        "rarity": 2
+    },
+    {
+        "id": 126,
+        "name": "Clockwork Cat",
+        "rarity": 0
+    },
+    {
+        "id": 128,
+        "name": "Vengeful Cat",
+        "rarity": 0
+    },
+    {
+        "id": 129,
+        "name": "Gold Cat",
+        "rarity": 1
+    },
+    {
+        "id": 131,
+        "name": "Neneko",
+        "rarity": 1
+    },
+    {
+        "id": 132,
+        "name": "Kung Fu Cat X",
+        "rarity": 0
+    },
+    {
+        "id": 134,
+        "name": "Urashima Taro",
+        "rarity": 2
+    },
+    {
+        "id": 135,
+        "name": "The Grateful Crane",
+        "rarity": 2
+    },
+    {
+        "id": 136,
+        "name": "Momotaro",
+        "rarity": 2
+    },
+    {
+        "id": 137,
+        "name": "Kasa Jizo",
+        "rarity": 2
+    },
+    {
+        "id": 138,
+        "name": "Princess Kaguya",
+        "rarity": 2
+    },
+    {
+        "id": 143,
+        "name": "Nurse Cat",
+        "rarity": 2
+    },
+    {
+        "id": 144,
+        "name": "Cat Base Mini",
+        "rarity": 1
+    },
+    {
+        "id": 145,
+        "name": "Cat Gunslinger",
+        "rarity": 0
+    },
+    {
+        "id": 146,
+        "name": "Stilts Cat",
+        "rarity": 0
+    },
+    {
+        "id": 147,
+        "name": "Tin Cat",
+        "rarity": 0
+    },
+    {
+        "id": 148,
+        "name": "Rocker Cat",
+        "rarity": 0
+    },
+    {
+        "id": 149,
+        "name": "Mer-Cat",
+        "rarity": 0
+    },
+    {
+        "id": 150,
+        "name": "Juliet Cat",
+        "rarity": 1
+    },
+    {
+        "id": 151,
+        "name": "Weightlifter Cat",
+        "rarity": 1
+    },
+    {
+        "id": 152,
+        "name": "Figure Skating Cats",
+        "rarity": 1
+    },
+    {
+        "id": 153,
+        "name": "Cat Toaster",
+        "rarity": 1
+    },
+    {
+        "id": 154,
+        "name": "Hoop Cat",
+        "rarity": 0
+    },
+    {
+        "id": 158,
+        "name": "Uesugi Kenshin",
+        "rarity": 2
+    },
+    {
+        "id": 159,
+        "name": "Kalisa",
+        "rarity": 2
+    },
+    {
+        "id": 168,
+        "name": "Asiluga",
+        "rarity": 2
+    },
+    {
+        "id": 169,
+        "name": "Kubiluga",
+        "rarity": 2
+    },
+    {
+        "id": 170,
+        "name": "Tecoluga",
+        "rarity": 2
+    },
+    {
+        "id": 171,
+        "name": "Balaluga",
+        "rarity": 2
+    },
+    {
+        "id": 173,
+        "name": "Baby Mola",
+        "rarity": 1
+    },
+    {
+        "id": 174,
+        "name": "Mola King",
+        "rarity": 2
+    },
+    {
+        "id": 176,
+        "name": "Marshmallow Cat",
+        "rarity": 0
+    },
+    {
+        "id": 177,
+        "name": "Dioramos",
+        "rarity": 2
+    },
+    {
+        "id": 183,
+        "name": "Cat Kart R",
+        "rarity": 0
+    },
+    {
+        "id": 194,
+        "name": "Akira",
+        "rarity": 2
+    },
+    {
+        "id": 195,
+        "name": "Mekako Saionji",
+        "rarity": 2
+    },
+    {
+        "id": 196,
+        "name": "Catman",
+        "rarity": 2
+    },
+    {
+        "id": 197,
+        "name": "Psychocat",
+        "rarity": 0
+    },
+    {
+        "id": 198,
+        "name": "Onmyoji Cat",
+        "rarity": 0
+    },
+    {
+        "id": 199,
+        "name": "Surfer Cat",
+        "rarity": 1
+    },
+    {
+        "id": 200,
+        "name": "Metal Cat",
+        "rarity": 1
+    },
+    {
+        "id": 201,
+        "name": "Drumcorps Cat",
+        "rarity": 0
+    },
+    {
+        "id": 203,
+        "name": "Kachi-Kachi",
+        "rarity": 2
+    },
+    {
+        "id": 212,
+        "name": "The White Rabbit",
+        "rarity": 2
+    },
+    {
+        "id": 214,
+        "name": "HYAKUTARO",
+        "rarity": 0
+    },
+    {
+        "id": 215,
+        "name": "MARCO",
+        "rarity": 0
+    },
+    {
+        "id": 216,
+        "name": "TARMA",
+        "rarity": 0
+    },
+    {
+        "id": 217,
+        "name": "ERI",
+        "rarity": 0
+    },
+    {
+        "id": 218,
+        "name": "FIO",
+        "rarity": 0
+    },
+    {
+        "id": 219,
+        "name": "SV-001",
+        "rarity": 1
+    },
+    {
+        "id": 220,
+        "name": "ALLEN O'NEIL",
+        "rarity": 1
+    },
+    {
+        "id": 221,
+        "name": "MARS PEOPLE",
+        "rarity": 0
+    },
+    {
+        "id": 222,
+        "name": "HUGE HERMIT",
+        "rarity": 2
+    },
+    {
+        "id": 223,
+        "name": "JUPITER KING",
+        "rarity": 2
+    },
+    {
+        "id": 224,
+        "name": "DONALD MORDEN",
+        "rarity": 2
+    },
+    {
+        "id": 225,
+        "name": "HI-DO",
+        "rarity": 2
+    },
+    {
+        "id": 226,
+        "name": "Warlock and Pierre",
+        "rarity": 2
+    },
+    {
+        "id": 227,
+        "name": "Pumpcat",
+        "rarity": 0
+    },
+    {
+        "id": 228,
+        "name": "Gloomy Neneko",
+        "rarity": 1
+    },
+    {
+        "id": 229,
+        "name": "Hallowindy",
+        "rarity": 2
+    },
+    {
+        "id": 230,
+        "name": "Spooky Thundia",
+        "rarity": 2
+    },
+    {
+        "id": 237,
+        "name": "Freshman Cat Jobs",
+        "rarity": 1
+    },
+    {
+        "id": 238,
+        "name": "Rich Cat III",
+        "rarity": 1
+    },
+    {
+        "id": 239,
+        "name": "Sniper the Recruit",
+        "rarity": 1
+    },
+    {
+        "id": 240,
+        "name": "Togeluga",
+        "rarity": 2
+    },
+    {
+        "id": 241,
+        "name": "Frosty Kai",
+        "rarity": 2
+    },
+    {
+        "id": 242,
+        "name": "Santa Kuu",
+        "rarity": 2
+    },
+    {
+        "id": 243,
+        "name": "Holy Coppermine",
+        "rarity": 2
+    },
+    {
+        "id": 244,
+        "name": "A Gift of Cats",
+        "rarity": 0
+    },
+    {
+        "id": 257,
+        "name": "Thunder God Zeus",
+        "rarity": 2
+    },
+    {
+        "id": 258,
+        "name": "Anubis the Protector",
+        "rarity": 2
+    },
+    {
+        "id": 259,
+        "name": "Radiant Aphrodite",
+        "rarity": 2
+    },
+    {
+        "id": 260,
+        "name": "Catway",
+        "rarity": 1
+    },
+    {
+        "id": 261,
+        "name": "Hayabusa",
+        "rarity": 2
+    },
+    {
+        "id": 267,
+        "name": "Catornado",
+        "rarity": 1
+    },
+    {
+        "id": 269,
+        "name": "Baby Gao",
+        "rarity": 2
+    },
+    {
+        "id": 271,
+        "name": "Shining Amaterasu",
+        "rarity": 2
+    },
+    {
+        "id": 272,
+        "name": "Splendid Ganesha",
+        "rarity": 2
+    },
+    {
+        "id": 273,
+        "name": "Cheerleader Cat",
+        "rarity": 1
+    },
+    {
+        "id": 274,
+        "name": "Tropical Kalisa",
+        "rarity": 2
+    },
+    {
+        "id": 275,
+        "name": "Midsummer Rabbit",
+        "rarity": 2
+    },
+    {
+        "id": 276,
+        "name": "Sunny Neneko",
+        "rarity": 1
+    },
+    {
+        "id": 277,
+        "name": "Funghi",
+        "rarity": 0
+    },
+    {
+        "id": 282,
+        "name": "Awa-Odori Cat",
+        "rarity": 0
+    },
+    {
+        "id": 283,
+        "name": "Pai-Pai",
+        "rarity": 2
+    },
+    {
+        "id": 284,
+        "name": "Express Cat",
+        "rarity": 1
+    },
+    {
+        "id": 286,
+        "name": "Strike Unit R.E.I.",
+        "rarity": 2
+    },
+    {
+        "id": 287,
+        "name": "Little Leaguer Cat",
+        "rarity": 1
+    },
+    {
+        "id": 302,
+        "name": "Lilith Cat",
+        "rarity": 2
+    },
+    {
+        "id": 303,
+        "name": "Food Stall Cat",
+        "rarity": 0
+    },
+    {
+        "id": 304,
+        "name": "Mighty Kat-A-Pult",
+        "rarity": 2
+    },
+    {
+        "id": 305,
+        "name": "Mighty Drednot",
+        "rarity": 2
+    },
+    {
+        "id": 306,
+        "name": "Mighty Bomburr",
+        "rarity": 2
+    },
+    {
+        "id": 307,
+        "name": "Vaulter Cat",
+        "rarity": 1
+    },
+    {
+        "id": 308,
+        "name": "Gardener Cat",
+        "rarity": 0
+    },
+    {
+        "id": 310,
+        "name": "Yuletide Nurse",
+        "rarity": 2
+    },
+    {
+        "id": 314,
+        "name": "Years-End Neneko",
+        "rarity": 1
+    },
+    {
+        "id": 315,
+        "name": "PIKOTARO",
+        "rarity": 0
+    },
+    {
+        "id": 316,
+        "name": "Wrathful Poseidon",
+        "rarity": 2
+    },
+    {
+        "id": 318,
+        "name": "Miko Mitama",
+        "rarity": 2
+    },
+    {
+        "id": 319,
+        "name": "Killer Cat",
+        "rarity": 0
+    },
+    {
+        "id": 322,
+        "name": "Sarukani",
+        "rarity": 2
+    },
+    {
+        "id": 324,
+        "name": "Curling Cat",
+        "rarity": 0
+    },
+    {
+        "id": 325,
+        "name": "Welterweight Cat",
+        "rarity": 0
+    },
+    {
+        "id": 326,
+        "name": "Mobius",
+        "rarity": 2
+    },
+    {
+        "id": 327,
+        "name": "Belial",
+        "rarity": 1
+    },
+    {
+        "id": 329,
+        "name": "Eggy Cat",
+        "rarity": 0
+    },
+    {
+        "id": 330,
+        "name": "Springtime Kenshin",
+        "rarity": 2
+    },
+    {
+        "id": 331,
+        "name": "Bunny & Canard",
+        "rarity": 2
+    },
+    {
+        "id": 332,
+        "name": "Easter Neneko",
+        "rarity": 1
+    },
+    {
+        "id": 333,
+        "name": "Shadow Gao",
+        "rarity": 2
+    },
+    {
+        "id": 334,
+        "name": "Trickster Himeyuri",
+        "rarity": 2
+    },
+    {
+        "id": 335,
+        "name": "Sea Maiden Ruri",
+        "rarity": 2
+    },
+    {
+        "id": 336,
+        "name": "Queen Reika",
+        "rarity": 2
+    },
+    {
+        "id": 338,
+        "name": "Imagawa Yoshimoto",
+        "rarity": 2
+    },
+    {
+        "id": 351,
+        "name": "Twinstars",
+        "rarity": 2
+    },
+    {
+        "id": 354,
+        "name": "Seashore Kai",
+        "rarity": 2
+    },
+    {
+        "id": 355,
+        "name": "Mighty Rekon Korps",
+        "rarity": 2
+    },
+    {
+        "id": 357,
+        "name": "Wolfchild Deale",
+        "rarity": 2
+    },
+    {
+        "id": 358,
+        "name": "Graveflower Verbena",
+        "rarity": 2
+    },
+    {
+        "id": 359,
+        "name": "Bora",
+        "rarity": 2
+    },
+    {
+        "id": 360,
+        "name": "Mizli",
+        "rarity": 2
+    },
+    {
+        "id": 361,
+        "name": "Aer",
+        "rarity": 2
+    },
+    {
+        "id": 376,
+        "name": "Rover Cat",
+        "rarity": 0
+    },
+    {
+        "id": 377,
+        "name": "Fencer Cat",
+        "rarity": 1
+    },
+    {
+        "id": 378,
+        "name": "Dark Mitama",
+        "rarity": 2
+    },
+    {
+        "id": 379,
+        "name": "Volley Cat",
+        "rarity": 0
+    },
+    {
+        "id": 380,
+        "name": "D'artanyan",
+        "rarity": 2
+    },
+    {
+        "id": 382,
+        "name": "Glass Cat",
+        "rarity": 0
+    },
+    {
+        "id": 396,
+        "name": "Ganglion",
+        "rarity": 2
+    },
+    {
+        "id": 397,
+        "name": "Sakura",
+        "rarity": 2
+    },
+    {
+        "id": 401,
+        "name": "Voli",
+        "rarity": 2
+    },
+    {
+        "id": 402,
+        "name": "Chibi Shinji",
+        "rarity": 0
+    },
+    {
+        "id": 404,
+        "name": "Neko Kirin",
+        "rarity": 0
+    },
+    {
+        "id": 406,
+        "name": "Neko Rei",
+        "rarity": 0
+    },
+    {
+        "id": 407,
+        "name": "Neko Asuka",
+        "rarity": 0
+    },
+    {
+        "id": 408,
+        "name": "Neko Mari",
+        "rarity": 0
+    },
+    {
+        "id": 409,
+        "name": "Chibi Rei",
+        "rarity": 1
+    },
+    {
+        "id": 410,
+        "name": "Chibi Asuka",
+        "rarity": 1
+    },
+    {
+        "id": 411,
+        "name": "Chibi Mari",
+        "rarity": 1
+    },
+    {
+        "id": 412,
+        "name": "EVA-00",
+        "rarity": 2
+    },
+    {
+        "id": 413,
+        "name": "EVA-01",
+        "rarity": 2
+    },
+    {
+        "id": 414,
+        "name": "EVA-02",
+        "rarity": 2
+    },
+    {
+        "id": 415,
+        "name": "Neko Shinji",
+        "rarity": 2
+    },
+    {
+        "id": 416,
+        "name": "Zero Moon Operators",
+        "rarity": 2
+    },
+    {
+        "id": 417,
+        "name": "Thermae",
+        "rarity": 2
+    }
+]
