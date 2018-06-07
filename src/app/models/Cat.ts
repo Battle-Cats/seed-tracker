@@ -10,12 +10,9 @@ rarityStrings[Rarity.UberRare] = "Uber Rare";
 
 
 export class Cat implements ICat {
-    name: string;
-    id: number;
-    rarity: Rarity;
     rarityString: string;
-    constructor(id: number, name: string, rarity: Rarity) {
-        this.id = id;
+
+    constructor(public id: number, public name: string, public rarity: Rarity) {
         this.name = name;
         this.rarity = rarity;
         this.rarityString = rarityStrings[this.rarity];

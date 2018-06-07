@@ -8,10 +8,12 @@ export class TrackManager implements ITrackManager {
     trackA: ITrack;
     trackB: ITrack;
     private lastSeed: number = 0;
+
     constructor(private seedGenerator: ISeedGenerator, private gachas: IGachaSet[]) {
         this.trackA = new Track("A", gachas);
         this.trackB = new Track("B", gachas);
     }
+
     updateSeed(seed: number) {
         let currentRollCount = this.trackA.rolls.length;
         this.seedGenerator.reset(seed);
@@ -19,6 +21,7 @@ export class TrackManager implements ITrackManager {
         this.trackB.clear();
         this.addRolls(currentRollCount);
     }
+    
     addRolls(count: number) {
         let initSeed = this.seedGenerator.currentSeed;
         let seeds = this.seedGenerator.generate(count * 2);

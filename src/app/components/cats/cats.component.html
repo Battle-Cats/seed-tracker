@@ -1,17 +1,11 @@
 <h2>Cats</h2>
-<ul class="cats">
+<ul>
   <li *ngFor="let cat of cats"
-      [class.selected]="cat === selectedCat" 
       (click)="onSelect(cat)">
     
-    {{cat.name}}
+    <h3>{{cat.name}}</h3>
     <div *ngIf="selectedCat && selectedCat === cat">
         <span>ID: {{selectedCat.id}}, Rarity: {{selectedCat.rarityString}}</span>
     </div>
   </li>
 </ul>
-<div *ngIf="selectedCat">
-  <h2>{{selectedCat.name}} details</h2>
-  <div>
-  </div>
-</div>

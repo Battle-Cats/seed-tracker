@@ -12,7 +12,7 @@ export class GachaRoll implements IGachaRoll {
     score: number;
     rolledCats: ICatSelection[] = [];
 
-    constructor(private gachaSets: IGachaSet[], id: string, scoreSeed: number, slotSeed: number, guaranteedUberSeed: number) {
+    constructor(gachaSets: IGachaSet[], id: string, scoreSeed: number, slotSeed: number, guaranteedUberSeed: number) {
         this.id = id;
         this.scoreSeed = scoreSeed;
         this.slotSeed = slotSeed;

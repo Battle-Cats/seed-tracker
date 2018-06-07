@@ -1,10 +1,12 @@
 import { ISeedGenerator } from "../interfaces/ISeedGenerator";
+
 export class SeedGenerator implements ISeedGenerator {
-    rootSeed: number;
     currentSeed: number;
-    constructor(rootSeed: number) {
-        this.rootSeed = rootSeed;
+
+    constructor(public rootSeed: number) {
+        this.currentSeed = rootSeed;
     }
+
     generate(count: number = 1): number[] {
         let seeds: number[];
         seeds = [];
@@ -14,12 +16,14 @@ export class SeedGenerator implements ISeedGenerator {
         }
         return seeds;
     }
+
     reset(seed?: number): void {
         if (seed) {
             this.rootSeed = seed;
         }
         this.currentSeed = this.rootSeed;
     }
+
     private getNext(seed: number): number {
         seed ^= seed << 13;
         seed ^= seed >> 17;
