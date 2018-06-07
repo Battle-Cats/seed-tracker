@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ICat} from "../models/dataTypes";
-import {CatService} from "../cat.service";
-import { Observable } from 'rxjs';
+import {ICat} from "../../interfaces/ICat";
+import {CatService} from "../../services/cat.service";
 
 @Component({
   selector: 'app-cats',

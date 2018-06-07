@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { IGachaSet } from "../models/dataTypes";
-import { CatSetService } from "../cat-set.service";
+import { IGachaSet } from "../../interfaces/IGachaSet";
+import { CatSetService } from "../../services/cat-set.service";
 
 @Component({
   selector: 'app-cat-sets',
