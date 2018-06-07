@@ -12,7 +12,7 @@ export class TrackService {
   public trackManager: ITrackManager;
   private seedGenerator: ISeedGenerator;
 
-  constructor(catSetService: CatSetService) { 
+  constructor(public catSetService: CatSetService) { 
     this.seedGenerator = new SeedGenerator(0);
     catSetService.getSets().subscribe(sets => this.trackManager = new TrackManager(this.seedGenerator, sets));
   }

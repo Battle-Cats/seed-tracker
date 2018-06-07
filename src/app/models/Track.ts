@@ -10,7 +10,7 @@ export class Track implements ITrack {
     }
 
     roll(scoreSeed: number, slotSeed: number, guaranteedUberSeed: number) {
-        let id = `${this.id}${this.rolls.length}`;
+        let id = `${this.id}${this.rolls.length + 1}`;
         this.rolls.push(new GachaRoll(this.gachas, id, scoreSeed, slotSeed, guaranteedUberSeed));
     }
     

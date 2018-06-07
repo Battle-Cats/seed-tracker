@@ -1,0 +1,7 @@
+.tracks {
+    display: flex;
+}
+
+.track {
+    flex: 50%;
+}

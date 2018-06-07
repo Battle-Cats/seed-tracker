@@ -1,0 +1,9 @@
+<div>
+  <form (ngSubmit)="updateSeed()" #seedForm="ngForm">
+    <div class="form-group">
+      <label for="seed">Seed</label>
+      <input type="number" class="form-control" id="seed" name="seed"
+        [(ngModel)]="seed">
+    </div>
+  </form>
+</div>

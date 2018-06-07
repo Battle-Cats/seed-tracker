@@ -40,7 +40,7 @@ export class GachaRoll implements IGachaRoll {
         let catSlot = Math.abs(this.slotSeed) % cats.length;
         let cat = cats[catSlot];
 
-        let garUberSlot = Math.abs(this.guaranteedUberSeed) & gacha.uberRareCats.length;
+        let garUberSlot = Math.abs(this.guaranteedUberSeed) % gacha.uberRareCats.length;
         let garUberCat = gacha.uberRareCats[garUberSlot];
 
         let catSelection: IGachaCatRoll = {
