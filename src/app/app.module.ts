@@ -8,6 +8,7 @@ import { CatsComponent } from './components/cats/cats.component';
 import { CatSetsComponent } from './components/cat-sets/cat-sets.component';
 import { TrackComponent } from './components/track/track.component';
 import { SeedComponent } from './components/seed/seed.component';
+import { SingleTrackComponent } from './components/single-track/single-track.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SeedComponent } from './components/seed/seed.component';
     CatSetsComponent,
     TrackComponent,
     SeedComponent,
+    SingleTrackComponent,
   ],
   imports: [
     BrowserModule,

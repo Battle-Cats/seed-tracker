@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TrackService } from '../../services/track.service';
 import { IGachaSet } from '../../interfaces/IGachaSet';
+import { Rarity } from '../../enums';
 
 @Component({
   selector: 'app-track',

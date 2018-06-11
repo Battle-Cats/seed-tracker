@@ -1048,5 +1048,55 @@
         "id": 417,
         "name": "Thermae",
         "rarity": 2
+    },
+    {
+        "id": 418,
+        "name": "Crazed Moneko",
+        "rarity": 2
+    },
+    {
+        "id": 419,
+        "name": "Pokota",
+        "rarity": 0
+    },
+    {
+        "id": 420,
+        "name": "Obis",
+        "rarity": 0
+    },
+    {
+        "id": 421,
+        "name": "Here",
+        "rarity": 0
+    },
+    {
+        "id": 422,
+        "name": "Mengumi Moe & Cat",
+        "rarity": 0
+    },
+    {
+        "id": 423,
+        "name": "Matsuaki & Cat",
+        "rarity": 0
+    },
+    {
+        "id": 424,
+        "name": "Ono Misa & Cat",
+        "rarity": 0
+    },
+    {
+        "id": 425,
+        "name": "Da Qin Rei & Cat",
+        "rarity": -1
+    },
+    {
+        "id": 426,
+        "name": "Bun Bunko Rider",
+        "rarity": -1
+    },
+    {
+        "id": 427,
+        "name": "Cat Quest",
+        "rarity": 2
     }
 ]

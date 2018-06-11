@@ -1,0 +1,24 @@
+<div class="track">
+    <h2>Track {{track.id}}</h2>
+    <table class="table">
+      <tr>
+        <th>Roll</th>
+        <th>Score</th>
+        <th>Rarity</th>
+        <th>Cat</th>
+        <th>Guaranteed Uber</th>
+      </tr>
+      <tr *ngFor="let roll of track.rolls; let i = index"
+          [ngClass]="rarityClass(roll.rolledCats[selectedGacha.name].cat.rarity)">
+        <td>{{roll.id}}</td>
+        <td>{{roll.score}}</td>
+        <td>{{roll.rolledCats[selectedGacha.name].cat.rarityString}}</td>
+        <td>{{roll.rolledCats[selectedGacha.name].cat.name}}</td>
+        <td>
+          <div *ngIf="i+garUberOffset < track.rolls.length">
+            {{track.rolls[i+garUberOffset].rolledCats[selectedGacha.name].guaranteedUber.name}}
+          </div>
+        </td>
+      </tr>
+    </table>
+</div>

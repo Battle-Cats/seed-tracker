@@ -5,52 +5,16 @@
   </select>
 
   <div class="tracks" *ngIf="selectedGacha">
-    <div class="track">
-        <h2>Track A</h2>
-        <table class="table">
-          <tr>
-            <th>Roll</th>
-            <th>Score</th>
-            <th>Rarity</th>
-            <th>Cat</th>
-            <th>Guaranteed Uber</th>
-          </tr>
-          <tr *ngFor="let roll of trackService.trackManager.trackA.rolls; let i = index">
-            <td>{{roll.id}}</td>
-            <td>{{roll.score}}</td>
-            <td>{{roll.rolledCats[selectedGacha.name].cat.rarityString}}</td>
-            <td>{{roll.rolledCats[selectedGacha.name].cat.name}}</td>
-            <td>
-              <div *ngIf="i+garUberOffset < trackService.trackManager.trackA.rolls.length">
-                {{trackService.trackManager.trackA.rolls[i+garUberOffset].rolledCats[selectedGacha.name].guaranteedUber.name}}
-              </div>
-            </td>
-          </tr>
-        </table>
-    </div>
-    <div class="track">
-        <h2>Track B</h2>
-        <table class="table" *ngIf="selectedGacha">
-          <tr>
-            <th>Roll</th>
-            <th>Score</th>
-            <th>Rarity</th>
-            <th>Cat</th>
-            <th>Guaranteed Uber</th>
-          </tr>
-          <tr *ngFor="let roll of trackService.trackManager.trackB.rolls; let i = index">
-            <td>{{roll.id}}</td>
-            <td>{{roll.score}}</td>
-            <td>{{roll.rolledCats[selectedGacha.name].cat.rarityString}}</td>
-            <td>{{roll.rolledCats[selectedGacha.name].cat.name}}</td>
-            <td>
-              <div *ngIf="i+garUberOffset < trackService.trackManager.trackB.rolls.length">
-                {{trackService.trackManager.trackB.rolls[i+garUberOffset].rolledCats[selectedGacha.name].guaranteedUber.name}}
-              </div>
-            </td>
-          </tr>
-        </table>
-    </div>
+      <app-single-track class="track" 
+      [track]="trackService.trackManager.trackA" 
+      [garUberOffset]="garUberOffset"
+      [selectedGacha]="selectedGacha">
+    </app-single-track>
+    <app-single-track class="track" 
+      [track]="trackService.trackManager.trackB" 
+      [garUberOffset]="garUberOffset"
+      [selectedGacha]="selectedGacha">
+    </app-single-track>
   </div>
 
   <div>

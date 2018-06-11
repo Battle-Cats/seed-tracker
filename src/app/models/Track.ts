@@ -6,7 +6,7 @@ import { GachaRoll } from "./GachaRoll";
 export class Track implements ITrack {
     rolls: IGachaRoll[] = [];
     
-    constructor(private id: string, private gachas: IGachaSet[]) {
+    constructor(public id: string, private gachas: IGachaSet[]) {
     }
 
     roll(scoreSeed: number, slotSeed: number, guaranteedUberSeed: number) {

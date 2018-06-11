@@ -4,4 +4,14 @@
 
 .track {
     flex: 50%;
+    white-space: nowrap;
+}
+
+.superRare {
+    color: rgb(137, 231, 137);
+}
+
+.uberRare {
+    color: white;
+    background-color: darkgreen;
 }
