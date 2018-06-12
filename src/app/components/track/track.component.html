@@ -1,14 +1,27 @@
 <div *ngIf="trackService.trackManager">
-  <div class="form-group col-xs-2">
-    <label>Select Gacha</label>
-    <select [(ngModel)]="selectedGacha"
-            (ngModelChange)="onSelectedGachaChanged($event)"
-            class="form-control">
-      <option *ngFor="let gacha of trackService.trackManager.gachas" 
-              [ngValue]="gacha">
-              {{gacha.name}}
-      </option>
-    </select>
+  <div class="form-group row">
+    <app-seed class="col-lg-4"></app-seed>
+    <div class="col-lg-4">
+      <label>Gacha Set</label>
+      <select [(ngModel)]="selectedGacha"
+              (ngModelChange)="onSelectedGachaChanged($event)"
+              class="form-control">
+        <option *ngFor="let gacha of trackService.trackManager.gachas" 
+                [ngValue]="gacha">
+                {{gacha.name}}
+        </option>
+      </select>
+    </div>
+    <div class="col-lg-4">
+      <label>Guaranteed Draw Count</label>
+      <select [(ngModel)]="garUberOffset"
+              class="form-control">
+        <option *ngFor="let drawCount of garUberDrawOptions"
+                [ngValue]="drawCount">
+          {{drawCount}}+1
+        </option>
+      </select>
+    </div>
   </div>
   <div class="form-group row"></div>
 

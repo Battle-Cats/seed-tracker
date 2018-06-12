@@ -10,6 +10,7 @@ import { IGachaSet } from '../../interfaces/IGachaSet';
 export class TrackComponent implements OnInit {
   public selectedGacha: IGachaSet = null;
   public garUberOffset = 10;
+  public garUberDrawOptions = [10, 7];
   private selectedGachaKey = "battlecats.selectedGacha";
 
   constructor(public trackService: TrackService) {
