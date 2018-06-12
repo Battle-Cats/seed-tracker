@@ -7,11 +7,12 @@ import { TrackService } from '../../services/track.service';
   styleUrls: ['./seed.component.css']
 })
 export class SeedComponent implements OnInit {
-  public seed = -1657549335;
+  public seed = 0;
 
   constructor(private trackService: TrackService) { }
 
   ngOnInit() {
+    this.trackService.seed.subscribe(seed => this.seed = seed);
   }
 
   updateSeed() {

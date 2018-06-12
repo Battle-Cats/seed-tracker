@@ -7,7 +7,6 @@ import { ISeedGenerator } from "../interfaces/ISeedGenerator";
 export class TrackManager implements ITrackManager {
     trackA: ITrack;
     trackB: ITrack;
-    private lastSeed: number = 0;
 
     constructor(private seedGenerator: ISeedGenerator, public gachas: IGachaSet[]) {
         this.trackA = new Track("A", gachas);

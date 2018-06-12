@@ -1,6 +1,7 @@
 <div *ngIf="trackService.trackManager">
-  <div>Select Gacha</div>
-  <select [(ngModel)]="selectedGacha">
+  <div><b>Select Gacha</b></div>
+  <select [(ngModel)]="selectedGacha"
+           (ngModelChange)="onSelectedGachaChanged($event)">
     <option *ngFor="let gacha of trackService.trackManager.gachas" [ngValue]="gacha">{{gacha.name}}</option>
   </select>
 
