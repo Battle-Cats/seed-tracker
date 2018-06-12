@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ITrack } from '../../interfaces/ITrack';
 import { Rarity } from '../../enums';
 import { IGachaSet } from '../../interfaces/IGachaSet';
+import { IGachaRoll } from '../../interfaces/IGachaRoll';
 
 @Component({
   selector: 'app-single-track',
@@ -23,6 +24,12 @@ export class SingleTrackComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  scoreClass(roll: IGachaRoll): string {
+    if (roll.allUbers) return "uberRare";
+    if (roll.hasUbers) return "possibleUber";
+    return "";
   }
   
   rarityClass(rarity: Rarity): string {

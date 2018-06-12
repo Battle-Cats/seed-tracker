@@ -11,11 +11,11 @@ export class CatSetsComponent implements OnInit {
   catSets: IGachaSet[];
   selectedSet: IGachaSet;
 
-  constructor(private catSetService: CatSetService) { }
+  constructor(private catSetService: CatSetService) { 
+    this.catSetService.getSets().subscribe(s => {this.catSets = s; console.log(s)});
+  }
 
   ngOnInit() {
-    console.log(this.catSetService);
-    this.catSetService.getSets().subscribe(s => {this.catSets = s; console.log(s)});
   }
 
   onSelect(set: IGachaSet) {

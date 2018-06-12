@@ -12,13 +12,14 @@ export class TrackComponent implements OnInit {
   public garUberOffset = 10;
   private selectedGachaKey = "battlecats.selectedGacha";
 
-  constructor(public trackService: TrackService) { }
-
-  ngOnInit() {
-    this.trackService.catSetService.getSets().subscribe(sets => {
-      if (this.selectedGacha === null)
+  constructor(public trackService: TrackService) {
+    this.trackService.isReady.subscribe(ready => {
+      if (this.selectedGacha === null && ready)
         this.selectedGacha = this.fetchSelectedGacha();
     });
+  }
+
+  ngOnInit() {
   }
 
   addRows(count: number = 100) {

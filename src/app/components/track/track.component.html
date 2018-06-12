@@ -1,9 +1,16 @@
 <div *ngIf="trackService.trackManager">
-  <div><b>Select Gacha</b></div>
-  <select [(ngModel)]="selectedGacha"
-           (ngModelChange)="onSelectedGachaChanged($event)">
-    <option *ngFor="let gacha of trackService.trackManager.gachas" [ngValue]="gacha">{{gacha.name}}</option>
-  </select>
+  <div class="form-group col-xs-2">
+    <label>Select Gacha</label>
+    <select [(ngModel)]="selectedGacha"
+            (ngModelChange)="onSelectedGachaChanged($event)"
+            class="form-control">
+      <option *ngFor="let gacha of trackService.trackManager.gachas" 
+              [ngValue]="gacha">
+              {{gacha.name}}
+      </option>
+    </select>
+  </div>
+  <div class="form-group row"></div>
 
   <div class="tracks" *ngIf="selectedGacha">
       <app-single-track class="track" 
@@ -19,6 +26,6 @@
   </div>
 
   <div>
-      <button class="btn" (click)="addRows(100)">Add 100 Rows</button>
+      <button class="btn btn-primary" (click)="addRows(100)">Add 100 Rows</button>
   </div>
 </div>

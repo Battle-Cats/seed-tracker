@@ -11,7 +11,9 @@
       <tbody>
         <tr *ngFor="let roll of track.rolls; let i = index">
           <th scope="row">{{roll.id}}</th>
-          <td>{{roll.score}}</td>
+          <td [ngClass]="scoreClass(roll)">
+            {{roll.score}}
+          </td>
           <td [ngClass]="rarityClass(roll.rolledCats[selectedGacha.name].cat.rarity)">
             {{roll.rolledCats[selectedGacha.name].cat.rarityString}}
           </td>

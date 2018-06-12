@@ -21,5 +21,7 @@ export interface IGachaRoll {
     readonly slotSeed: number;
     readonly guaranteedUberSeed: number;
     readonly score: number;
+    readonly hasUbers: boolean;
+    readonly allUbers: boolean;
     rolledCats: ICatSelection[];
 }

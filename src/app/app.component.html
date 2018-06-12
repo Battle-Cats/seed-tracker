@@ -1,5 +1,22 @@
 <h1>{{title}}</h1>
-<app-seed></app-seed>
-<app-track></app-track>
+<div class="container container-fluid">
+    <div class="row flex-xl">
+        <div class="col-12 col-xl-12">
+            <ngb-tabset>
+                <ngb-tab title="Track">
+                    <ng-template ngbTabContent>
+                        <app-seed></app-seed>
+                        <app-track></app-track>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Cat Sets">
+                    <ng-template ngbTabContent>
+                        <app-cat-sets></app-cat-sets>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
+    </div>
+</div>
 <!-- <app-cat-sets></app-cat-sets>
 <app-cats></app-cats> -->

@@ -1,6 +1,7 @@
 import { IGachaRoll, ICatSelection, IGachaCatRoll } from "../interfaces/IGachaRoll";
 import { IGachaSet } from "../interfaces/IGachaSet";
 import { ICat } from "../interfaces/ICat";
+import { Rarity } from "../enums";
 
 
 
@@ -11,6 +12,8 @@ export class GachaRoll implements IGachaRoll {
     guaranteedUberSeed: number;
     score: number;
     rolledCats: ICatSelection[] = [];
+    hasUbers: boolean = false;
+    allUbers: boolean = false;
 
     constructor(gachaSets: IGachaSet[], id: string, scoreSeed: number, slotSeed: number, guaranteedUberSeed: number) {
         this.id = id;
@@ -18,10 +21,20 @@ export class GachaRoll implements IGachaRoll {
         this.slotSeed = slotSeed;
         this.guaranteedUberSeed = guaranteedUberSeed;
         this.score = Math.abs(scoreSeed) % 10000;
+        this.hasUbers = false;
+        this.allUbers = true;
         
         for (let i = 0; i < gachaSets.length; i++) {
             let gacha = gachaSets[i];
-            this.rolledCats[gacha.name] = this.getCatSelection(gacha);
+            let catSelection = this.getCatSelection(gacha);
+            this.rolledCats[gacha.name] = catSelection;
+
+            if (catSelection.cat.rarity === Rarity.UberRare) {
+                this.hasUbers = true;
+            }
+            else {
+                this.allUbers = false;
+            }
         }
     }
 

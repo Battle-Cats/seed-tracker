@@ -1,13 +1,36 @@
-<h1>Cat Sets</h1>
-<ul>
-  <div *ngFor="let set of catSets"
-       (click)="onSelect(set)">
-    <h2>{{set.name}}</h2>
-    <div *ngIf="selectedSet && selectedSet === set">
-      <h3>Ubers</h3>
-      <div *ngFor="let uber of set.uberRareCats; let i = index">
-        {{i}}: {{uber.name}}
+<div class="form-group col-xs-2">
+    <label>Select Gacha</label>
+    <select [(ngModel)]="selectedSet"
+            class="form-control">
+      <option *ngFor="let gacha of catSets" 
+              [ngValue]="gacha">
+              {{gacha.name}}
+      </option>
+    </select>
+</div>
+<div *ngIf="selectedSet">
+  <div class="row">
+    <label class="col-lg-4">Uber Rare: {{selectedSet.uberRarePercent}}%</label>
+    <label class="col-lg-4">Super Rare: {{selectedSet.superAndUberRarePercent - selectedSet.uberRarePercent}}%</label>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      Uber Rares
+      <div *ngFor="let cat of selectedSet.uberRareCats; let i = index">
+        {{i}}: {{cat.name}}
+      </div>
+    </div>
+    <div class="col-lg-4">
+      Super Rares
+      <div *ngFor="let cat of selectedSet.superRareCats; let i = index">
+        {{i}}: {{cat.name}}
+      </div>
+    </div>
+    <div class="col-lg-4">
+      Rares
+      <div *ngFor="let cat of selectedSet.rareCats; let i = index">
+        {{i}}: {{cat.name}}
       </div>
     </div>
   </div>
-</ul>
+</div>

@@ -12,9 +12,12 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class TrackService {
   private seedGenerator: ISeedGenerator;
   private seedSubject: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+  private readySubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   private seedKey = "battlecats.seed";
   public seed: Observable<number> = this.seedSubject.asObservable();
   public trackManager: ITrackManager;
+  public isReady: Observable<boolean> = this.readySubject.asObservable();
+
 
   constructor(public catSetService: CatSetService) { 
     let seed = this.fetchSeed();
@@ -23,6 +26,7 @@ export class TrackService {
     catSetService.getSets().subscribe(sets => {
       this.trackManager = new TrackManager(this.seedGenerator, sets);
       this.addRows();
+      this.readySubject.next(true);
     });
   }
 
