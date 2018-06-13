@@ -1,21 +1,40 @@
+
+<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+    <div class="navbar-brand">{{title}}</div>
+    <div id="navbar" class="navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" [routerLinkActive]="['active']">
+                <a class="nav-link" [routerLink]="['track']" (click)="navbarCollapsed = true">Track</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link" [routerLink]="['cat-sets']" (click)="navbarCollapsed = true">Cat Sets</a>
+            </li>
+        </ul>
+        <app-seed class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-seed>
+        <app-set-selector class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-set-selector>
+    </div>
+</nav>
+
 <div class="container root">
-    <h1 class="h1">{{title}}</h1>
-    <div class="row flex-xl">
+    <router-outlet class="ng-view" autoscroll="true"></router-outlet>
+    <!-- <app-track id="track"></app-track>
+    <app-cat-sets id="cat-sets"></app-cat-sets> -->
+    <!-- <div class="row flex-xl">
         <div class="col-12 col-xl-12">
             <ngb-tabset>
-                <ngb-tab title="Track">
+                <ngb-tab title="Track" id="track">
                     <ng-template ngbTabContent>
                         <app-track></app-track>
                     </ng-template>
                 </ngb-tab>
-                <ngb-tab title="Cat Sets">
+                <ngb-tab title="Cat Sets" id="sets">
                     <ng-template ngbTabContent>
                         <app-cat-sets></app-cat-sets>
                     </ng-template>
                 </ngb-tab>
             </ngb-tabset>
         </div>
-    </div>
+    </div> -->
 </div>
 <!-- <app-cat-sets></app-cat-sets>
 <app-cats></app-cats> -->

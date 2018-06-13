@@ -3,14 +3,12 @@ import { TrackService } from '../../services/track.service';
 import { IGachaSet } from '../../interfaces/IGachaSet';
 
 @Component({
-  selector: 'app-track',
-  templateUrl: './track.component.html',
-  styleUrls: ['./track.component.css']
+  selector: 'app-set-selector',
+  templateUrl: './set-selector.component.html',
+  styleUrls: ['./set-selector.component.css']
 })
-export class TrackComponent implements OnInit {
+export class SetSelectorComponent implements OnInit {
   public selectedGacha: IGachaSet = null;
-  public garUberOffset = 10;
-  public garUberDrawOptions = [10, 7];
 
   constructor(public trackService: TrackService) { }
 
@@ -18,9 +16,7 @@ export class TrackComponent implements OnInit {
     this.trackService.selectedSet.subscribe(set => this.selectedGacha = set);
   }
 
-  addRows(count: number = 100) {
-    console.log("Adding rows")
-    this.trackService.addRows(count);
-    console.log(this.trackService.trackManager);
+  onSelectedGachaChanged(selectedGacha: IGachaSet) {
+    this.trackService.setSelectedGacha(selectedGacha);
   }
 }

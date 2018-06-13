@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IGachaSet } from "../../interfaces/IGachaSet";
-import { CatSetService } from "../../services/cat-set.service";
+import { TrackService } from '../../services/track.service';
 
 @Component({
   selector: 'app-cat-sets',
@@ -11,14 +11,9 @@ export class CatSetsComponent implements OnInit {
   catSets: IGachaSet[];
   selectedSet: IGachaSet;
 
-  constructor(private catSetService: CatSetService) { 
-    this.catSetService.getSets().subscribe(s => {this.catSets = s; console.log(s)});
-  }
+  constructor(private trackService: TrackService) {}
 
   ngOnInit() {
-  }
-
-  onSelect(set: IGachaSet) {
-    this.selectedSet = set;
+    this.trackService.selectedSet.subscribe(set => this.selectedSet = set); 
   }
 }

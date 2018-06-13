@@ -1,0 +1,9 @@
+<div *ngIf="trackService.trackManager" >
+  <select [(ngModel)]="selectedGacha" (ngModelChange)="onSelectedGachaChanged($event)"
+          class="form-control" id="gachaSelect">
+    <option *ngFor="let gacha of trackService.trackManager.gachas" 
+      [ngValue]="gacha">
+      {{gacha.name}}
+    </option>
+  </select>
+</div>

@@ -10,7 +10,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let roll of track.rolls; let i = index">
-          <th scope="row">{{roll.id}}</th>
+          <th scope="row" id="{{roll.id}}">{{roll.id}}</th>
           <td [ngClass]="scoreClass(roll)">
             {{roll.score}}
           </td>
