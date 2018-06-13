@@ -1,7 +1,10 @@
 
-<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-    <div class="navbar-brand">{{title}}</div>
-    <div id="navbar" class="navbar-collapse">
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="#">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active" [routerLinkActive]="['active']">
                 <a class="nav-link" [routerLink]="['track']">Track</a>
@@ -9,9 +12,15 @@
             <li class="nav-item" [routerLinkActive]="['active']">
                 <a class="nav-link" [routerLink]="['cat-sets']">Cat Sets</a>
             </li>
+            <li class="nav-item">
+                <app-seed></app-seed>
+            </li>
+            <li class="nav-item">
+                <app-set-selector></app-set-selector>
+            </li>
         </ul>
-        <app-seed class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-seed>
-        <app-set-selector class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-set-selector>
+        <!-- <app-seed class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-seed> -->
+        <!-- <app-set-selector class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-set-selector> -->
     </div>
 </nav>
 
