@@ -14,6 +14,8 @@ export class SingleTrackComponent implements OnInit {
   @Input() garUberOffset: number;
   @Input() selectedGacha: IGachaSet;
 
+  public nextTrackId: string;
+  public nextTrackRollOffset: number;
   private rarityClasses : {[rarity: number]: string; } = {};
 
   constructor() { 
@@ -24,6 +26,14 @@ export class SingleTrackComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (this.track.id == "A") {
+      this.nextTrackId = "B";
+      this.nextTrackRollOffset = 0;
+    }
+    else {
+      this.nextTrackId = "A";
+      this.nextTrackRollOffset = 1;
+    }
   }
 
   scoreClass(roll: IGachaRoll): string {

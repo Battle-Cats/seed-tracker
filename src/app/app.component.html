@@ -1,9 +1,10 @@
 
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-    <a class="navbar-brand" href="#">{{title}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-left" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="navbar-brand" href="#">{{title}}</a>
     <div class="navbar-collapse collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active" [routerLinkActive]="['active']">
@@ -24,7 +25,7 @@
     </div>
 </nav>
 
-<div class="container root">
+<div class="container-fluid root">
     <router-outlet class="ng-view" autoscroll="true"></router-outlet>
     <!-- <app-track id="track"></app-track>
     <app-cat-sets id="cat-sets"></app-cat-sets> -->

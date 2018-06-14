@@ -20,7 +20,7 @@
           <td>{{roll.rolledCats[selectedGacha.name].cat.name}}</td>
           <td>
             <div *ngIf="i+garUberOffset < track.rolls.length">
-              {{track.rolls[i+garUberOffset].rolledCats[selectedGacha.name].guaranteedUber.name}}
+              {{track.rolls[i+garUberOffset].rolledCats[selectedGacha.name].guaranteedUber.name}} -> {{nextTrackId}}{{i+1+garUberOffset+nextTrackRollOffset}}
             </div>
           </td>
         </tr>
