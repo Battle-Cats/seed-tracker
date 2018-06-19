@@ -18,12 +18,16 @@
       <app-single-track class="track" 
       [track]="trackService.trackManager.trackA" 
       [garUberOffset]="garUberOffset"
-      [selectedGacha]="selectedGacha">
+      [selectedGacha]="selectedGacha"
+      [savedRollId]="savedRollId"
+      (savedRollUpdated)="updateSavedRoll($event)">
     </app-single-track>
     <app-single-track class="track" 
       [track]="trackService.trackManager.trackB" 
       [garUberOffset]="garUberOffset"
-      [selectedGacha]="selectedGacha">
+      [selectedGacha]="selectedGacha"
+      [savedRollId]="savedRollId"
+      (savedRollUpdated)="updateSavedRoll($event)">
     </app-single-track>
   </div>
 

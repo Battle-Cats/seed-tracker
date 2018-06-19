@@ -1,4 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'https://use.fontawesome.com/releases/v5.0.13/css/all.css';
 
 body {
     min-height: 80rem;
@@ -8,4 +9,20 @@ body {
 .anchor {
   padding-top: 60px;
   margin-top: -60px;
+}
+
+.hover-visible-link a {
+  visibility: hidden;
+}
+
+.hover-visible-link i {
+  visibility: hidden;
+}
+
+.hover-visible-link:hover a {
+  visibility: visible;
+}
+
+.hover-visible-link:hover i {
+  visibility: visible;
 }

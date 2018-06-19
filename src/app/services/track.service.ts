@@ -6,31 +6,36 @@ import { TrackManager } from '../models/TrackManager';
 import { CatSetService } from './cat-set.service';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { IGachaSet } from '../interfaces/IGachaSet';
+import { LocalStringItemStorage, LocalItemStorage, LocalNumberItemStorage } from '../models/LocalItemStorage';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TrackService {
   private seedGenerator: ISeedGenerator;
-  private seedSubject: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+  private seedStorage: LocalItemStorage<number> = new LocalNumberItemStorage("battlecats.seed", 0);
+  private savedRollStorage: LocalItemStorage<string> = new LocalStringItemStorage("battlecats.savedRoll", "");
   private readySubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
-  private selectedSetSubject: BehaviorSubject<IGachaSet> = new BehaviorSubject<IGachaSet>(null);
-  private seedKey = "battlecats.seed";
-  private selectedGachaKey = "battlecats.selectedGacha";
+  private selectedSetStorage: LocalItemStorage<IGachaSet>;
 
-  public seed: Observable<number> = this.seedSubject.asObservable();
   public trackManager: ITrackManager;
+  public seed: Observable<number> = this.seedStorage.asObservable();
   public isReady: Observable<boolean> = this.readySubject.asObservable();
-  public selectedSet: Observable<IGachaSet> = this.selectedSetSubject.asObservable();
+  public savedRoll: Observable<string> = this.savedRollStorage.asObservable();
+  public selectedSet: Observable<IGachaSet>;
 
   constructor(public catSetService: CatSetService) { 
-    let seed = this.fetchSeed();
+    let seed = this.seedStorage.fetch();
+    this.savedRollStorage.fetch();
     this.seedGenerator = new SeedGenerator(seed);
-    this.seedSubject.next(seed);
+    this.selectedSetStorage = new LocalItemStorage<IGachaSet>("battlecats.selectedGacha", null, v => v.name, 
+                                                              gachaName => this.gachaNameToGacha(gachaName));
+    this.selectedSet = this.selectedSetStorage.asObservable();
+
     catSetService.getSets().subscribe(sets => {
       this.trackManager = new TrackManager(this.seedGenerator, sets);
       this.addRows();
-      this.setSelectedGacha(this.fetchSelectedGacha());
+      this.selectedSetStorage.fetch();
       this.readySubject.next(true);
     });
   }
@@ -44,30 +49,23 @@ export class TrackService {
   updateSeed(seed: number) {
     if (this.trackManager === null) 
       return;
-    localStorage.setItem(this.seedKey, String(seed));
+    this.seedStorage.update(seed);
     this.trackManager.updateSeed(seed);
-    this.seedSubject.next(seed);
+  }
+
+  updateSavedRoll(roll: string) {
+    this.savedRollStorage.update(roll);
   }
 
   setSelectedGacha(set: IGachaSet) {
-    this.saveSelectedGacha(set);
-    this.selectedSetSubject.next(set);
+    this.selectedSetStorage.update(set);
   }
 
-  private fetchSelectedGacha(): IGachaSet {
-    let gachaName = localStorage.getItem(this.selectedGachaKey);
+  private gachaNameToGacha(gachaName: string): IGachaSet {
     let gachaIndex = this.trackManager.gachas.findIndex(s => s.name == gachaName);
     if (gachaIndex < 0)
       gachaIndex = 0;
 
     return this.trackManager.gachas[gachaIndex];
-  }
-
-  private saveSelectedGacha(set: IGachaSet) {
-    localStorage.setItem(this.selectedGachaKey, set.name);
-  }
-
-  private fetchSeed(): number {
-    return +localStorage.getItem(this.seedKey);
   }
 }

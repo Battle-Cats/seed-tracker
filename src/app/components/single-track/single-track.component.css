@@ -9,3 +9,20 @@
 .uberRare {
     background-color: #c3e6cb;
 }
+
+.selected {
+    background-color: #fafa9d;
+}
+
+.saved {
+    background-color: #5ff18b;
+}
+
+.save-icon {
+    color: #777777;
+    padding-left: 10px;
+}
+
+.save-icon:hover {
+    color: #333333;
+}
