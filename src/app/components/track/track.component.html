@@ -12,16 +12,17 @@
       </select>
     </div>
   </div>
-  <div class="form-group row"></div>
-
-  <div class="tracks" *ngIf="selectedGacha">
-      <app-single-track class="track" 
+  <div class="tracks row" *ngIf="selectedGacha">
+    <div class="col-sm-6">
+    <app-single-track class="track" 
       [track]="trackService.trackManager.trackA" 
       [garUberOffset]="garUberOffset"
       [selectedGacha]="selectedGacha"
       [savedRollId]="savedRollId"
       (savedRollUpdated)="updateSavedRoll($event)">
     </app-single-track>
+    </div>
+    <div class="col-sm-6">
     <app-single-track class="track" 
       [track]="trackService.trackManager.trackB" 
       [garUberOffset]="garUberOffset"
@@ -29,6 +30,7 @@
       [savedRollId]="savedRollId"
       (savedRollUpdated)="updateSavedRoll($event)">
     </app-single-track>
+    </div>
   </div>
 
   <div>

@@ -51,7 +51,7 @@ export class SingleTrackComponent implements OnInit {
       try {
         let fragObj = document.querySelector(`#${this.fragment}`);
         fragObj.scrollIntoView(true);
-        window.scrollBy(0, -50);
+        window.scrollBy(0, -70);
       }
       catch (e) {
       }

@@ -1,11 +1,11 @@
-.tracks {
+/* .tracks {
     display: flex;
 }
 
 .track {
     flex: 50%;
     white-space: nowrap;
-}
+} */
 
 .superRare {
     color: rgb(137, 231, 137);

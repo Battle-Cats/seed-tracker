@@ -26,7 +26,10 @@ export class TrackService {
 
   constructor(public catSetService: CatSetService) { 
     let seed = this.seedStorage.fetch();
-    this.savedRollStorage.fetch();
+    let savedRoll = this.savedRollStorage.fetch();
+    if (savedRoll === "") {
+      this.savedRollStorage.update("A1");
+    }
     this.seedGenerator = new SeedGenerator(seed);
     this.selectedSetStorage = new LocalItemStorage<IGachaSet>("battlecats.selectedGacha", null, v => v.name, 
                                                               gachaName => this.gachaNameToGacha(gachaName));
@@ -34,7 +37,7 @@ export class TrackService {
 
     catSetService.getSets().subscribe(sets => {
       this.trackManager = new TrackManager(this.seedGenerator, sets);
-      this.addRows();
+      this.addRows(500);
       this.selectedSetStorage.fetch();
       this.readySubject.next(true);
     });

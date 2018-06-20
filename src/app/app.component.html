@@ -7,11 +7,14 @@
     <a class="navbar-brand" href="#">{{title}}</a>
     <div class="navbar-collapse collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active" [routerLinkActive]="['active']">
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link" [routerLink]="['dashboard']">Dashboard</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
                 <a class="nav-link" [routerLink]="['track']">Track</a>
             </li>
             <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link" [routerLink]="['cat-sets']">Cat Sets</a>
+                <a class="nav-link" [routerLink]="['cat-sets']">Sets</a>
             </li>
             <li class="nav-item">
                 <app-seed></app-seed>
@@ -20,31 +23,9 @@
                 <app-set-selector></app-set-selector>
             </li>
         </ul>
-        <!-- <app-seed class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-seed> -->
-        <!-- <app-set-selector class="navbar-nav form-inline mt-2 mt-md-0 px-2"></app-set-selector> -->
     </div>
 </nav>
 
 <div class="container-fluid root">
     <router-outlet class="ng-view" autoscroll="true"></router-outlet>
-    <!-- <app-track id="track"></app-track>
-    <app-cat-sets id="cat-sets"></app-cat-sets> -->
-    <!-- <div class="row flex-xl">
-        <div class="col-12 col-xl-12">
-            <ngb-tabset>
-                <ngb-tab title="Track" id="track">
-                    <ng-template ngbTabContent>
-                        <app-track></app-track>
-                    </ng-template>
-                </ngb-tab>
-                <ngb-tab title="Cat Sets" id="sets">
-                    <ng-template ngbTabContent>
-                        <app-cat-sets></app-cat-sets>
-                    </ng-template>
-                </ngb-tab>
-            </ngb-tabset>
-        </div>
-    </div> -->
 </div>
-<!-- <app-cat-sets></app-cat-sets>
-<app-cats></app-cats> -->

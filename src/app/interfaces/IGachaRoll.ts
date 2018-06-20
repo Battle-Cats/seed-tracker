@@ -24,4 +24,5 @@ export interface IGachaRoll {
     readonly hasUbers: boolean;
     readonly allUbers: boolean;
     rolledCats: ICatSelection[];
+    showDetails: boolean;
 }

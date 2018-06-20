@@ -12,13 +12,17 @@ import { TrackComponent } from './components/track/track.component';
 import { SeedComponent } from './components/seed/seed.component';
 import { SingleTrackComponent } from './components/single-track/single-track.component';
 import { SetSelectorComponent } from './components/set-selector/set-selector.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
+const homePage = "/track";
 
 const appRoutes: Routes = [
 
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'track', component: TrackComponent },
   { path: 'cat-sets', component: CatSetsComponent },
-  { path: '', redirectTo: '/track', pathMatch: 'full' },
-  { path: '**', redirectTo: '/track' }
+  { path: '', redirectTo: homePage, pathMatch: 'full' },
+  { path: '**', redirectTo: homePage }
 ]
 
 @NgModule({
@@ -30,6 +34,7 @@ const appRoutes: Routes = [
     SeedComponent,
     SingleTrackComponent,
     SetSelectorComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,37 +1,56 @@
 <h2>Track {{track.id}}</h2>
-<table class="table table-bordered table-hover">
+<table class="table table-sm table-responsive-xl text-nowrap table-bordered table-hover">
   <thead class="bg-light">
     <th class="id-col">Roll</th>
-    <th>Score</th>
     <th>Rarity</th>
     <th>Cat</th>
     <th class="gar-uber-col">Guaranteed Uber</th>
   </thead>
   <tbody>
-    <tr *ngFor="let roll of track.rolls; let i = index">
-      <th scope="row" id="{{roll.id}}" 
-          [class.selected]="fragment === roll.id"
-          [class.saved]="savedRollId === roll.id"
-          class="hover-visible-link">
-        {{roll.id}}
-        <i class="fas fa-save save-icon" (click)="saveRoll(roll)"></i>
-      </th>
-      <td [ngClass]="scoreClass(roll)">
-        {{roll.score}}
-      </td>
-      <td [ngClass]="rarityClass(roll.rolledCats[selectedGacha.name].cat.rarity)">
-        {{roll.rolledCats[selectedGacha.name].cat.rarityString}}
-      </td>
-      <td>{{roll.rolledCats[selectedGacha.name].cat.name}}</td>
-      <td>
-        <div *ngIf="i+garUberOffset < track.rolls.length" class="hover-visible-link">
-          <span>{{track.rolls[i+garUberOffset].rolledCats[selectedGacha.name].guaranteedUber.name}}</span>
-          <a class="badge badge-secondary float-right"
-              [routerLink]="['.']" fragment="{{nextTrackId}}{{i+1+garUberOffset+nextTrackRollOffset}}">
-            <i class="fas fa-arrow-right"></i> {{nextTrackId}}{{i+1+garUberOffset+nextTrackRollOffset}}
-          </a>
-        </div>
-      </td>
-    </tr>
+    <ng-template ngFor let-roll [ngForOf]="track.rolls" let-i="index">
+      <tr class="clickable" (click)="roll.showDetails = !roll.showDetails">
+        <th scope="row" id="{{roll.id}}" 
+            [class.selected]="fragment === roll.id"
+            [class.bg-success]="savedRollId === roll.id"
+            [class.text-white]="savedRollId === roll.id"
+            class="hover-visible-link">
+          {{roll.id}}
+        </th>
+        <td [ngClass]="scoreClass(roll)">
+          {{roll.rolledCats[selectedGacha.name].cat.rarityString}}
+        </td>
+        <td>{{roll.rolledCats[selectedGacha.name].cat.name}}</td>
+        <td>
+          <div *ngIf="i+garUberOffset < track.rolls.length" class="hover-visible-link">
+            <span>{{track.rolls[i+garUberOffset].rolledCats[selectedGacha.name].guaranteedUber.name}}</span>
+          </div>
+        </td>
+      </tr>
+      <tr [class.collapse]="!roll.showDetails">
+        <td colspan="4">
+          <div class="row">
+            <div class="col-8">
+              <button class="btn btn-sm btn-success" (click)="saveRoll(roll)">
+                <i class="fas fa-save save-icon"></i>
+              </button>
+            </div>
+            <div class="col-4 float-right">
+              <a class="badge badge-secondary"
+                [routerLink]="['.']" fragment="{{nextTrackId}}{{i+1+garUberOffset+nextTrackRollOffset}}">
+                <i class="fas fa-arrow-right"></i> {{nextTrackId}}{{i+1+garUberOffset+nextTrackRollOffset}}
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4"><b>Seed</b></div>
+            <div class="col-4"><b>Score</b></div>
+          </div>
+          <div class="row">
+            <div class="col-4">{{roll.scoreSeed}}</div>
+            <div class="col-4">{{roll.score}}</div>
+          </div>
+        </td>
+      </tr>
+    </ng-template>
   </tbody>
 </table>

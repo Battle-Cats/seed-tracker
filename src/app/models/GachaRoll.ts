@@ -14,6 +14,7 @@ export class GachaRoll implements IGachaRoll {
     rolledCats: ICatSelection[] = [];
     hasUbers: boolean = false;
     allUbers: boolean = false;
+    showDetails: boolean = false;
 
     constructor(gachaSets: IGachaSet[], id: string, scoreSeed: number, slotSeed: number, guaranteedUberSeed: number) {
         this.id = id;
