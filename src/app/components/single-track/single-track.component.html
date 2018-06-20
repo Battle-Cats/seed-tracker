@@ -28,27 +28,12 @@
       </tr>
       <tr [class.collapse]="!roll.showDetails">
         <td colspan="4">
-          <div class="row">
-            <div class="col-8">
-              <button class="btn btn-sm btn-success" (click)="saveRoll(roll)">
-                <i class="fas fa-save save-icon"></i>
-              </button>
-            </div>
-            <div class="col-4 float-right">
-              <a class="badge badge-secondary"
-                [routerLink]="['.']" fragment="{{nextTrackId}}{{i+1+garUberOffset+nextTrackRollOffset}}">
-                <i class="fas fa-arrow-right"></i> {{nextTrackId}}{{i+1+garUberOffset+nextTrackRollOffset}}
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4"><b>Seed</b></div>
-            <div class="col-4"><b>Score</b></div>
-          </div>
-          <div class="row">
-            <div class="col-4">{{roll.scoreSeed}}</div>
-            <div class="col-4">{{roll.score}}</div>
-          </div>
+          <app-roll-details-mini 
+            [roll]="roll"
+            [nextTrackId]="nextTrackId"
+            [nextTrackRollNumber]="nextTrackRollNumber(i)"
+            (savedRollUpdated)="saveRoll($event)">
+          </app-roll-details-mini>
         </td>
       </tr>
     </ng-template>

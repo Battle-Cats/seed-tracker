@@ -13,6 +13,7 @@ import { SeedComponent } from './components/seed/seed.component';
 import { SingleTrackComponent } from './components/single-track/single-track.component';
 import { SetSelectorComponent } from './components/set-selector/set-selector.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { RollDetailsMiniComponent } from './components/roll-details-mini/roll-details-mini.component';
 
 const homePage = "/track";
 
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     SingleTrackComponent,
     SetSelectorComponent,
     DashboardComponent,
+    RollDetailsMiniComponent,
   ],
   imports: [
     BrowserModule,

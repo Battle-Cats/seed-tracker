@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-4"><b>Seed</b></div>
+    <div class="col-4"><b>Score</b></div>
+</div>
+<div class="row">
+  <div class="col-4">{{roll.scoreSeed}}</div>
+  <div class="col-4">{{roll.score}}</div>
+</div>
+<div class="row">
+  <div class="col-8">
+    <button class="btn btn-sm btn-success" (click)="saveRoll(roll)">
+      <i class="fas fa-save save-icon"></i>
+    </button>
+  </div>
+  <div class="col-4 float-right">
+    <a class="badge badge-secondary"
+      [routerLink]="['.']" fragment="{{getGuaranteedUberNextId()}}">
+      <i class="fas fa-arrow-right"></i> {{getGuaranteedUberNextId()}}
+    </a>
+  </div>
+</div>

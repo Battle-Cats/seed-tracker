@@ -65,11 +65,14 @@ export class SingleTrackComponent implements OnInit {
   }
 
   saveRoll(roll: IGachaRoll) {
-    console.log(`updating saved roll to ${roll.id}`)
     this.savedRollUpdated.emit(roll.id);
   }
   
   rarityClass(rarity: Rarity): string {
     return this.rarityClasses[rarity];
+  }
+
+  nextTrackRollNumber(index: number): number {
+    return index + 1 + this.garUberOffset + this.nextTrackRollOffset;
   }
 }
