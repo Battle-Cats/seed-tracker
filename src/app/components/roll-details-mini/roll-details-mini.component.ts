@@ -18,7 +18,6 @@ export class RollDetailsMiniComponent implements OnInit {
   }
 
   saveRoll() {
-    console.log(`updating saved roll to ${this.roll.id}`)
     this.savedRollUpdated.emit(this.roll);
   }
 
